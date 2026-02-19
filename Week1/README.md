@@ -102,6 +102,11 @@ print(my_dict)
 {'name':['Rebecca',Raahat','Rita'],'age':[23,34,46],'city':['Seychelles','Seoul','Bern']}
 
 Screenshots of Results
+Key Observations/Lessons Learned
+- I learned how to execute commands of methods in lists data structure.
+- I learned how to execute commands of methods in tuples data structure.
+- I learnedd ho to execute commands of methods in dictionary data structure.
+  
 
 
 
