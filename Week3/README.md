@@ -1,4 +1,5 @@
 LAB TITLE: DATA STRUCTURES PART2: ARITHMETIC OPERATORS, COMPARISON OPERATORS, LOGICAL OPERATORS, ASSIGNMENT OPERATOR, BITWISE OPERATOR, MEMBERSHIP OPERATOR, IDENTITY OPERATOR
+
 LAB TITLE: STRINGS & CONTROL FLOW
 
 OBJECTIVE:The objective of the lessons taught in week3 was a continuation of the part 1 of  data structures that was taught in week2 and in week 3 we were taught how to use the different types of opertors in python to gain the ability to:
