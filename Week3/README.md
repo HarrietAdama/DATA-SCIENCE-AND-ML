@@ -11,3 +11,5 @@ OBJECTIVE:The objective of the lessons taught in week3 was a continuation of the
 3. To learn how to use the in(membership) and is(identity) operators to verify if data exists within a collection or to check the memory or storage of the data.
    
 4.To learn how to use the bitwise operators(&,|,~,^,<<,>>) for data manipiulation.  
+
+TOOLS USED: The tools used are: Google Colab, Jupyter notebook,
