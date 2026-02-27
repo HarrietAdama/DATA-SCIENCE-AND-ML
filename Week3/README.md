@@ -12,4 +12,41 @@ OBJECTIVE:The objective of the lessons taught in week3 was a continuation of the
    
 4.To learn how to use the bitwise operators(&,|,~,^,<<,>>) for data manipiulation.  
 
-TOOLS USED: The tools used are: Google Colab, Jupyter notebook,
+TOOLS USED: The tools used are: Google Colab, Jupyter notebook, Python.
+
+STEP BY STEP PROCESS
+
+The following is the step by step process of producing labs in the class in week 3:
+
+ARITHMETIC OPERATOR
+
+- I started with the Arithmetic operators which consist of addition(+), subtraction(-), multiplication(*), modulo(%), floor division(//), exponentiation(**).
+  
+- I called two variables x and y and assigned values to them respectively which we used the arithmetic operators to perform mathematical calculations and produced outputs from each operator.
+
+COMPARISON OPERATOR
+
+-  I used the comparison operators(<,>,==,<=,>=) to compare conditions and produced boolean outputs from each operator.
+
+LOGICAL OPERATOR
+
+-  I used the logical operators(AND,OR,NOT) to compare and combine statements using the comparison operators to see whether a statment was TRUE or FALSE.
+
+  ASSIGNMENT OPERATOR
+  
+-  I used the assignment operator to values to variables such as: x=3 or x-=3.
+
+  BITWISE OPERATOR
+
+-  I used th bitwise operator(&,|,~,^,<<,>>) to reference integers in the binary level, that is, in 0's and 1's.
+
+  MEMBERSHIP OPERATOR
+
+- with the membership operator, I used the IN and NOT IN operator to check whether a particular value exists or does not exist in a sequence or collection.
+
+IDENTITY OPERATOR
+
+-
+
+
+
