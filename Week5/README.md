@@ -42,10 +42,6 @@ joined
 
 # we are going to do a join but this time around we want to join df_9 and df_10. How do we want to join. we join it on the left and we want our suffix, which is the lsuffix. That is , the suffix for overlapping columns in df_9.
 
-left(rsuffix): Is that we are going to look at the other components of those 
-
-Right(rsuffix):
-
 
 # Filtering: You can filter data based on conditions. We are making a decision on what to keep and what not to keep.
 # We can filter by Age or by Name
@@ -294,7 +290,136 @@ identity_matrix    # output  [1 0 0
                               0 1 0]
                               0 0 1]
 
-# DETERMINANT OF A MATRIX                              
+# DETERMINANT OF A MATRIX: It is a single numerical value computed from a square matrix
+
+-det A = ad-bc
+
+- determinant = np.linaslg.det(A)
+print(int(determinant))    # output  -2
+
+# DELETING ELEMENTS IN AN ARRAY
+# To delete an element in an array:
+
+# 1. Call the array
+arr = np.array([[1 2 3], [4 5 6]])
+
+# 2. You call your delete variable
+
+delete_arr= np.delete(arr,2)
+
+(arr,2): This means arr = is the array called initially and 2 stands for the element in the index or position 2.
+
+# arr = [1 2 3 4 5 6]      # output  the element in index 2 is 3 so   [1 2 4 5 6]
+
+
+# STATISTICAL FUNCTIONS
+# MEAN: To find the mean:
+  np.mean()
+
+arr_mean = np.mean(arr)
+
+# MEDIAN:To find the median:
+
+     arr_median = np.median(arr)
+
+# MODE: With the mode it is quite different. We do not have the mode method. So we move from numpy to scipy to find the mode
+arr = np.array([1 2 3 4 5 6])
+
+from scipy import stats
+arr_mode = stats.mode(arr_, keepdims=False)
+
+
+# STANDARD DEVIATION: To find the standard deviation
+
+arr_std = np.std(arr)
+print(arr_std)
+
+# MATPLOTLIB: This is a python library that visualizes our data. It is mostly used to generate bars, charts, histograms, line plots etc
+
+# TYPES OF VISUALIZATION: We have the Qualitative and Quantitative visualization.
+# Under the Qualitative visualization we have:
+
+- Bar charts
+- Pie charts
+  
+
+  # BAR CHARTS:
+  - We first import matplotlib.pyplot as plt
+  -We are going to be using the iris dataset so we have to load the dataset. We load the iris dataset from sklearn.datasets.
+  - We write the code for our bar chart
+
+  # LOADING THE IRIS DATASET
+  iris= load_iris()
+  we want our x to be the irisdataset and y to be the iristarget
+  x = iris.data
+  y = iris.target
+  target_names = iris.target_names
+  # This loads the iris dataset
+
+ # Plotting the bar chart of the dataset
+# We use the matplotlib alias as plt to plot the bars
+plt.figure(figsize=(8,6))    # this determines the size of the figure and (8,6) is the length and breadth of the bars
+unique, counts= np.unique(y, return_counts=True)
+plt.bars(target_names, counts, color=plt.cm.viridis(np.linspace(0,1,len(target_names)))   # this gives the color to the bars from the viridis colormap
+plt.title('Bar Plot of Iris Species')
+plt.xlabel('Species')
+plt.ylabel('Count')
+plt.show()    # This will show the figure
+
+# PIE CHART: We can do a chart by using plt.pie
+plt.figure(figsize=(8,6))
+plt.pie(np.bincount(y), labels= target_names, autopct= '%1.1f%%', startangle= 140)
+
+# BINCOUNT: It is going to count the number of elements we have. It is going to look for each of the species and count the bin.
+# LABELS= TARGET_NAMES: The name of the species of flower.
+# AUTOPCT: %1.1F%%: Shows the percentage of the slices of the pie chart.
+# STARTANGLE= 140: Means rotate the start of the pie chart using an angle of 140.
+plt.title('Pie plot of Iris Species')    # gives the title of the pie chart.
+plt.show()
+
+# QUANTITATIVE VISUALIZATION: It visualizes data in a 3D grid where colors represent the values of each cell. They commonly used to display:
+-Correlations
+-distributions
+- densities of data points
+
+# HEATMAP: It is going find the correlation between each of the individual species.
+-First we load the iris dataset
+- And we plot the heatmap
+- plt.imshow(corr_matrix, cmap='colorwarm', aspect='auto')
+we do the same as the we did for the bar charts by giving a title but with this we add annotations
+# ADD ANNOTATIONS
+for i in range (corr_matrix.shape[0]):
+for j in range (corr_matrix.shape[1]):
+plt.text(j,i,f'{corr_matrix[i,j]:.2f}', ha='center', va='center', color='black')
+
+# Add colorbar
+plt.bar.colorbar(label='Correlation Coeffeicient')
+# We set labels
+plt.xticks(ticks= np.arange(len(iris.feature_names)), labels=iris.feature_names)
+plt.yticks(ticks= np.arange(len(iris.feature_names)), labels= iris.feature_names)
+
+plt.xticks: This means for the x value. We should use the sepal length in cm and everything.
+
+# LINE PLOT
+- We do the same for the line plots.
+# SCATTER PLOT
+
+# VIOLIN PLOT
+
+# HISTOGRAM
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
                               
  
 
